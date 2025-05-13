@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: m1u_description
+    relative_path: urdf/m1-u_combine.urdf
+  srdf:
+    relative_path: config/m1u_description.srdf
+  package_settings:
+    author_name: teemu harjula
+    author_email: teemu.harjula@student.samk.fi
+    generated_timestamp: 1747174988
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
