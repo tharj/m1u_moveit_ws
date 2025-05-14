@@ -1,12 +1,11 @@
-# ROS 2 build artifacts
+# ignore build artifacts
 build/
 install/
 log/
 
-# Python bytecode and cache
+# bytecode and cache
 __pycache__/
 *.pyc
 *.pyo
 
-# IDE specific files (optional)
 .vscode/
