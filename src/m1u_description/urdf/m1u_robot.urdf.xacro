@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<robot name="m1u_description" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <!-- Include your base URDF model which has the structure and the world link -->
+    <xacro:include filename="m1-u_combine.urdf" />
+
+    <!--
+    Placeholder for future Gazebo-specific enhancements:
+    - Gazebo plugins for sensors (camera, lidar, etc.)
+    - Gazebo material properties for links if different from RViz
+    - <ros2_control> tags for joint control simulation
+
+    Example:
+    <gazebo reference="link1">
+        <material>Gazebo/Orange</material>
+        <sensor type="camera" name="my_camera_sensor">
+            ...
+        </sensor>
+    </gazebo>
+
+    <ros2_control name="GazeboSystem" type="system">
+        <hardware>
+            <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+        </hardware>
+        <joint name="j1">
+            <command_interface name="position"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        ... more joints ...
+    </ros2_control>
+    -->
+
+</robot>
